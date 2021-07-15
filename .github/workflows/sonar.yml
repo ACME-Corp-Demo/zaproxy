@@ -25,9 +25,6 @@ jobs:
         key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
         restore-keys: |
           ${{ runner.os }}-gradle-
-    # TODO
-    #- name: Check Auth
-    #  run: curl --request POST --url https://eu.auth0.com/token --header 'content-type: application/json' '{"client_id":"M0sEf9p8BqyDC3iQbkts7YGUdjx20qkO","client_secret":"VhxWwGb6uyZg2u1mthxCacEfraeCKsMTcr3beL8nXozLJQZikO8Euyv5fPBhffKB" ,"grant_type":"client_credentials"}'
     - name: Gradle Test & Coverage Report
       run: ./gradlew test jacocoTestReport -Dorg.gradle.jvmargs=-Xmx4096m
     
