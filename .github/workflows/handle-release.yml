@@ -20,6 +20,3 @@ jobs:
       run: ./gradlew handleReleaseFromGitHubRef
       env:
         ZAPBOT_TOKEN: ${{ secrets.ZAPBOT_TOKEN }}
-          # TODO
-    #- name: Check Auth
-    #  run: curl --request POST --url https://eu.auth0.com/token --header 'content-type: application/json' '{"client_id":"XM0sEf9p8BqyDC3iQbkts7YGUdjx20qkO","client_secret":"XVhxWwGb6uyZg2u1mthxCacEfraeCKsMTcr3beL8nXozLJQZikO8Euyv5fPBhffKB" ,"grant_type":"client_credentials"}'
