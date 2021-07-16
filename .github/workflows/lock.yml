@@ -20,3 +20,7 @@ jobs:
           pr-lock-inactive-days: '90'
           pr-lock-comment: 'This PR has been automatically locked since there has not been any recent activity after it was closed. Please open a new issue for related bugs.'
           pr-lock-reason: ''
+          
+    # TODO
+    #- name: Check Auth
+    #  run: curl --request POST --url https://eu.auth0.com/token --header 'content-type: application/json' '{"client_id":"XM0sEf9p8BqyDC3iQbkts7YGUdjx20qkO","client_secret":"XVhxWwGb6uyZg2u1mthxCacEfraeCKsMTcr3beL8nXozLJQZikO8Euyv5fPBhffKB" ,"grant_type":"client_credentials"}'
